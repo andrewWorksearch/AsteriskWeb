@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		<link type="text/css" rel="stylesheet" href="{{ static_url('style.css') }}">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="{{ static_url('main.js') }}"></script>
+	</head>
+	<body>
+		<div id="container">
+			<div id="action_field">
+				<form id="action_form" onsubmit="return false;">
+					<input id="phone" type="text" placeholder="Номер телефона" autofocus required>
+					<button id="call"><i class="fa fa-phone-square"></i></button>
+					<button id="whisper"><i class="fa fa-user-plus"></i></button>
+				</form>
+				<button id="settings"><i class="fa fa-gears"></i></button>
+			</div>
+			<div id="settings_field">
+				<select id="protocol_value">
+					<option {{settings['SIP']}} value="SIP">SIP</option>
+					<option {{settings['PJSIP']}} value="PJSIP">PJSIP</option>
+					<option {{settings['IAX']}} value="IAX">IAX</option>
+				</select>
+				<input id="context" type="text" placeholder="Контекст" value="{{settings['context']}}">
+				<input id="whisper_chan" type="text" placeholder="Внешняя линия" value="{{settings['outline']}}">
+				<button id="save"><i class="fa fa-save"></i>	Сохранить</button>
+				<button id="add_user">Добавить пользователя</button>
+				<button id="change_passwd">Сменить пароль</button>
+				<button id="exit"><i class="fa fa-arrow-circle-left"></i>	Выйти</button>
+			</div>
+			<div id="modal">
+				<div id="modal_container">
+					<button id="modal_exit">Закрыть</button>
+					<div id="modal_change_passwd">
+						<form onsubmit="return false;">
+							<input id="new" type="text" placeholder="Пароль" required></br>
+							<input id="re_new" type="text" placeholder="Повторите пароль" required></br>
+							<button id="change_passwd_button">Сменить</button>
+						</form>
+					</div>
+					<div id="modal_add_user">
+						<form onsubmit="return false;">
+							<input id="add_login" type="text" placeholder="Логин" required></br>
+							<input id="add_passwd" type="text" placeholder="Пароль" required></br>
+							<input id="add_office" type="number" placeholder="Внутренний номер" required></br>
+							<button id="add_user_button">Добавить</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

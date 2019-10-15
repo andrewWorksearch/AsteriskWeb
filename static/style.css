@@ -1,0 +1,279 @@
+#auth_field{
+	position: absolute;
+	width: 400px;
+	height: 200px;
+	left: 50%;
+	margin-left: -200px;
+	top: 50%;
+	margin-top: -100px;
+}
+#login{
+	margin-left: 100px;
+	width: 200px;
+	height: 30px;
+	font-family: century gothic;
+	text-align: center;
+	outline: none;
+}
+#passwd{
+	margin-left: 100px;
+	width: 200px;
+	height: 30px;
+	font-family: century gothic;
+	text-align: center;
+	outline: none;
+}
+#submite{
+	font-size: 15px;
+	font-family: century gothic;
+	cursor: pointer;
+	border: none;
+	outline: none;
+	background: none;
+	width: 100px;
+	margin-left: 150px;
+	margin-top: 20px;
+}
+#container{
+	position: absolute;
+	width: 1000px;
+	height: 100%;
+	left: 50%;
+	margin-left: -500px;
+}
+#action_field{
+	width: 500px;
+	margin-top: 10%;
+	margin-left: 300px;
+}
+#phone{
+	height: 30px;
+	width: 300px;
+	font-size: 15px;
+	font-family: century gothic;
+	text-align: center;
+	outline: none;
+	vertical-align: bottom;
+}
+#call{
+	font-size: 30px;
+	cursor: pointer;
+	border: none;
+	outline: none;
+	background: none;
+	color: #008000;
+	margin-left: 25px;
+}
+#whisper{
+	font-size: 30px;
+	cursor: pointer;
+	border: none;
+	outline: none;
+	background: none;
+}
+#action_form{
+	display: inline-block;
+}
+#settings{
+	font-size: 30px;
+	cursor: pointer;
+	border: none;
+	outline: none;
+	background: none;
+}
+#settings_field{
+	width: 200px;
+	padding-top: 20px;
+	margin-left: 600px;
+	display: none;
+}
+#protocol_value{
+	width: 200px;
+	height: 30px;
+	font-size: 15px;
+	font-family: century gothic;
+	outline: none;
+	margin-top: 15px;
+}
+#context{
+	height: 30px;
+	width: 200px;
+	font-size: 15px;
+	font-family: century gothic;
+	text-align: center;
+	border: none;
+	outline: none;
+	margin-top: 15px;
+}
+#whisper_chan{
+	height: 30px;
+	width: 200px;
+	font-size: 15px;
+	font-family: century gothic;
+	text-align: center;
+	border: none;
+	outline: none;
+	margin-top: 15px;
+}
+#save{
+	width: 200px;
+	font-size: 15px;
+	font-family: century gothic;
+	cursor: pointer;
+	border: none;
+	outline: none;
+	background: none;
+	color: #FF0000;
+	margin-top: 15px;
+	display: none;
+}
+#add_user{
+	width: 200px;
+	font-size: 15px;
+	font-family: century gothic;
+	cursor: pointer;
+	border: none;
+	outline: none;
+	background: none;
+	margin-top: 20px;
+}
+#change_passwd{
+	width: 200px;
+	font-size: 15px;
+	font-family: century gothic;
+	cursor: pointer;
+	border: none;
+	outline: none;
+	background: none;
+	margin-top: 20px;
+}
+#exit{
+	width: 200px;
+	font-size: 15px;
+	font-family: century gothic;
+	cursor: pointer;
+	border: none;
+	outline: none;
+	background: none;
+	color: #008000;
+	margin-top: 20px;
+}
+#modal{
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.5);
+	z-index: 1;
+	display: none;
+}
+#modal_exit{
+	margin-left: 500px;
+	width: 100px;
+	font-size: 15px;
+	font-family: century gothic;
+	cursor: pointer;
+	border: none;
+	outline: none;
+	background: none;
+	color: #808080;
+	margin-top: 15px;
+}
+#modal_container{
+	height: 400px;
+	width: 600px;
+	position: absolute;
+	left: 50%;
+	margin-left: -300px;
+	top: 50%;
+	margin-top: -200px;
+	background: #FFFFFF;
+}
+#modal_change_passwd{
+	display: none;
+}
+#new{
+	height: 30px;
+	width: 200px;
+	font-size: 15px;
+	font-family: century gothic;
+	text-align: center;
+	outline: none;
+	border: solid 1px #808080;
+	margin-top: 75px;
+	margin-left: 200px;
+}
+#re_new{
+	height: 30px;
+	width: 200px;
+	font-size: 15px;
+	font-family: century gothic;
+	text-align: center;
+	outline: none;
+	border: solid 1px #808080;
+	margin-top: 15px;
+	margin-left: 200px;
+}
+#change_passwd_button{
+	width: 200px;
+	height: 30px;
+	font-size: 15px;
+	font-family: century gothic;
+	color: #008000;
+	cursor: pointer;
+	background: none;
+	border: solid 1px #008000;
+	outline: none;
+	margin-top: 30px;
+	margin-left: 200px;
+}
+#modal_add_user{
+	display: none;
+}
+#add_login{
+	height: 30px;
+	width: 200px;
+	font-size: 15px;
+	font-family: century gothic;
+	text-align: center;
+	outline: none;
+	border: solid 1px #808080;
+	margin-top: 50px;
+	margin-left: 200px;
+}
+#add_passwd{
+	height: 30px;
+	width: 200px;
+	font-size: 15px;
+	font-family: century gothic;
+	text-align: center;
+	outline: none;
+	border: solid 1px #808080;
+	margin-top: 15px;
+	margin-left: 200px;
+}
+#add_office{
+	height: 30px;
+	width: 200px;
+	font-size: 15px;
+	font-family: century gothic;
+	text-align: center;
+	outline: none;
+	border: solid 1px #808080;
+	margin-top: 15px;
+	margin-left: 200px;
+}
+#add_user_button{
+	width: 200px;
+	height: 30px;
+	font-size: 15px;
+	font-family: century gothic;
+	color: #008000;
+	cursor: pointer;
+	background: none;
+	border: solid 1px #008000;
+	outline: none;
+	margin-top: 30px;
+	margin-left: 200px;
+}
